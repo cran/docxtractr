@@ -16,7 +16,7 @@ the column names}
 \item{remove}{remove row specified by \code{row} after making it
 the column names? (Default: \code{TRUE})}
 
-\item{remove_previous}{remove any rows preceeding \code{row}? (Default:
+\item{remove_previous}{remove any rows preceding \code{row}? (Default:
 \code{TRUE} but will be assigned whatever is given for
 \code{remove}).}
 }
@@ -37,7 +37,7 @@ real_world <- read_docx(system.file("examples/realworld.docx", package="docxtrac
 docx_tbl_count(real_world)
 
 # get all the tables
-tbls <- docx_extract_all(real_world)
+tbls <- docx_extract_all_tbls(real_world)
 
 # make table 1 better
 assign_colnames(tbls[[1]], 2)
@@ -48,4 +48,3 @@ assign_colnames(tbls[[5]], 2)
 \seealso{
 \code{\link{docx_extract_all}}, \code{\link{docx_extract_tbl}}
 }
-

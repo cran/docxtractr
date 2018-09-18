@@ -4,13 +4,16 @@
 \alias{docx_extract_all_tbls}
 \title{Extract all tables from a Word document}
 \usage{
-docx_extract_all_tbls(docx, guess_header = TRUE, trim = TRUE)
+docx_extract_all_tbls(docx, guess_header = TRUE, preserve = FALSE,
+  trim = TRUE)
 }
 \arguments{
 \item{docx}{\code{docx} object read with \code{read_docx}}
 
-\item{guess_header}{should the function make a guess as to the existense of
+\item{guess_header}{should the function make a guess as to the existence of
 a header in a table? (Default: \code{TRUE})}
+
+\item{preserve}{preserve line breaks within a cell? Default: `FALSE`. NOTE: This overrides `trim`.}
 
 \item{trim}{trim leading/trailing whitespace (if any) in cells? (default: \code{TRUE})}
 }
@@ -33,4 +36,3 @@ tbls <- docx_extract_all_tbls(real_world)
 \seealso{
 \code{\link{assign_colnames}}, \code{\link{docx_extract_tbl}}
 }
-
