@@ -1,6 +1,6 @@
-# 0.6.2
+# 0.6.5
 
-- Added capability of converting PowerPoint to PDF with `convert_to_pdf` function (pull #21, @muschellij2).
+- Fix CRAN check errors on Fedora
 
 # 0.6.1
 
@@ -18,8 +18,7 @@
 
 # 0.4.0
 
-- add a `preserve` logical parameter to tbl extraction functions to support preserving
-  intra-cell whitespace (implements #9)
+- add a `preserve` logical paramater to tbl extraction functions to support preserving intra-cell whitespace (implements #9)
 - use `httr` vs `download.file()` for URL retrieval (fixes #10)
 
 # 0.3.0 WIP
